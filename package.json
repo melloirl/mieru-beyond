@@ -1,6 +1,17 @@
 {
+  "name": "discord-team-generator",
+  "version": "1.0.0",
+  "description": "Generates teams for discord",
+  "main": "src/app.js",
   "dependencies": {
     "discord.js": "^14.7.1",
     "dotenv": "^16.0.3"
+  },
+  "scripts": {
+    "test": "node ."
+  },
+  "keywords": [],
+  "author": "Pedro Melo",
+  "license": "ISC"
   }
-}
+  
