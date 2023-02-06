@@ -8,7 +8,6 @@ module.exports = {
     .setDescription("Junte-se à gloriosa evolução de Mieru! :D"),
   async execute(interaction, client) {
     let userProfile = await User.findOne({ userID: interaction.user.id });
-    console.log(userProfile);
     if (!userProfile) {
       userProfile = await new User({
         _id: mongoose.Types.ObjectId(),

@@ -1,8 +1,10 @@
-const chalk = require('chalk');
+const chalk = require("chalk");
 
 module.exports = {
-    name: 'err',
-    execute() {
-        console.log(chalk.red('An error has occurred with the database connection.'));
-    },
+  name: "err",
+  execute() {
+    console.log(
+      chalk.red("An error has occurred with the database connection.")
+    );
+  },
 };
