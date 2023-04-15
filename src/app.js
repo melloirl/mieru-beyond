@@ -1,6 +1,6 @@
 const { connect } = require("mongoose");
 require("dotenv").config();
-const { DISCORD_TOKEN, MONGODB_PASSWORD } = process.env;
+const { DISCORD_TOKEN, MONGODB_CONNECTION_STRING } = process.env;
 const { Client, Collection, GatewayIntentBits } = require("discord.js");
 const fs = require("fs");
 
@@ -32,5 +32,5 @@ client.handleCommands();
 client.handleComponents();
 client.login(DISCORD_TOKEN);
 (async () => {
-  await connect(MONGODB_PASSWORD).catch((err) => console.log(err));
+  await connect(MONGODB_CONNECTION_STRING).catch((err) => console.log(err));
 })();
