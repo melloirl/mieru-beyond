@@ -11,9 +11,13 @@
     "mongoose": "^6.9.0"
   },
   "scripts": {
-    "test": "node ."
+    "test": "jest --coverage",
+    "dev": "node ."
   },
   "keywords": [],
   "author": "Pedro Melo",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.4.1"
+  }
 }
